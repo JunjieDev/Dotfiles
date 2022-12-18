@@ -1,0 +1,9 @@
+[user]
+	name = junjiejean017
+	email = wangjunjiejean@gmail.com
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main

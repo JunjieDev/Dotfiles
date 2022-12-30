@@ -1,0 +1,8 @@
+-- =================================================================================
+--                                       Setting 
+-- ==================================================================================
+--- TIPS ---
+-- :help option-list
+-- :help <command> => Obtenir plus d'informations sur des commandes spécifiques.
+-- :options => Permet d'avoir tout les options pour la configuration de vim.
+-- URL : https://vimhelp.org/options.txt.html#options

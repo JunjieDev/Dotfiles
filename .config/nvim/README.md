@@ -23,4 +23,5 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 
 ## Sources
 
+- [nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
 - [ftplugin/](https://www.ejmastnak.com/tutorials/vim-latex/ftplugin/)

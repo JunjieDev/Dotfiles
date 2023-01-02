@@ -18,6 +18,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 | `pack/`          | Vim's default location for third-party plugins               |
 | `spell/`         | Files related to spell-checking                              |
 | `syntax/`        | Contains scripts related to syntax highlighting              |
+| `depth/`         | Folder That contains all the test config/plugin              |
 
 <font size="1">* This structure is an example/idea, it is in no way an absolute truth and can be adapted according to your preference.</font>
 

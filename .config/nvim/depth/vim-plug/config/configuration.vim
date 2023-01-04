@@ -80,4 +80,3 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set ttimeout		                                 " Activer le délai d'attente pour les compinaison de touches clés. Ex : <ESC> + a (avec délai en ttimeoutlen).
 set ttimeoutlen=50	                                 " Attendre jusqu'à 50 ms après Esc pour la touche spéciale.
 " }}}
-

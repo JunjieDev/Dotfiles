@@ -61,4 +61,3 @@ nnoremap <F3> :NERDTreeToggle<CR>
 " current tab does not exist, a new one will be initialized.
 "
 "# nnoremap <C-f> :NERDTreeFind<CR>
-

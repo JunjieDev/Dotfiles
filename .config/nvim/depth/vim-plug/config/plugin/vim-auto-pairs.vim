@@ -67,4 +67,3 @@ let g:AutoPairsShortcutBackInsert = '<M-b>'
 " move character under the cursor to the pair.
 "
 let g:AutoPairsMoveCharacter= "()[]{}\"'"
-

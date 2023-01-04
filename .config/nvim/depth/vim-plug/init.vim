@@ -21,7 +21,7 @@ source $HOME/.config/nvim/configuration.vim
 " }}}
 
 " THEME ------------------------------------------------------------------------ {{{
-"source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/airline.vim
 " }}}
 
 " PLUGINS ---------------------------------------------------------------------- {{{

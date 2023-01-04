@@ -20,6 +20,10 @@
 source $HOME/.vim/configuration.vim
 " }}}
 
+" THEME ------------------------------------------------------------------------ {{{
+source $HOME/.vim/themes/airline.vim
+" }}}
+
 " PLUGINS ---------------------------------------------------------------------- {{{
 source $HOME/.vim/vim-plug/vim_plugins.vim
 " }}}

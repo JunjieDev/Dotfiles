@@ -89,4 +89,3 @@ endif
 " Permet d'obtenir les differences entre le fichier charge au debut et l'actuelle avec modification.
 command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis | wincmd p | diffthis
 " }}}
-

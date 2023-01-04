@@ -9,4 +9,3 @@ Plug 'sheerun/vim-polyglot'
 "=================================================================================
 "Disabled the extension for the file
 "let g:polyglot_disabled = ['md', 'markdown']
-

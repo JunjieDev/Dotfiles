@@ -81,4 +81,3 @@ let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', 
     "nnoremap o o<esc>
     "nnoremap O O<esc>
 " }}}
-

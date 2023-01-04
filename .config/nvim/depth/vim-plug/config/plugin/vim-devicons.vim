@@ -15,4 +15,3 @@ set encoding=UTF-8
 " set guifont=<FONT_NAME> <FONT_SIZE>
 "
 "# set guifont=DroidSansMono\ Nerd\ Font\ 11
-

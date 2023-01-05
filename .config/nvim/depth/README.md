@@ -9,6 +9,12 @@ vim/nvim
 
 # vim-plug
 :PlugInstall
+
+# packer
+cd /root/.config/nvim
+./install
+:luafile %
+:PackerInstall
 ```
 
 ## Commmande
@@ -47,4 +53,5 @@ docker system prune -a
 ## Sources
 
 - [Vim-plug](https://github.com/junegunn/vim-plug)
+- [Packer](https://github.com/wbthomason/packer.nvim)
 

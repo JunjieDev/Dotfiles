@@ -2,7 +2,7 @@
 
 apt-get update
 apt-get install build-essential git curl tree software-properties-common fd-find ripgrep -y
-add-apt-repository ppa:neovim-ppa/stable
+add-apt-repository ppa:neovim-ppa/unstable
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get update
 apt-get install neovim nodejs -y

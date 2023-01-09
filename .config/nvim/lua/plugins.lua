@@ -35,6 +35,12 @@ packer.startup(function(use)
     -- Better mappings
     use ({ "b0o/mapx.nvim" })
 
+    -- Markdown-preview
+    use ({ 
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
+
     -- Status bar
     use ({
         "nvim-lualine/lualine.nvim",

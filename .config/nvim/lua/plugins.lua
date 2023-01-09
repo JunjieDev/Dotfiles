@@ -1,11 +1,14 @@
---=================================================================================
+-- ==================================================================================
 --                                    Packer-Config 
---=================================================================================
+-- ==================================================================================
 -- URL           : https://github.com/wbthomason/packer.nvim
 -- Reset package : rm -rf ~/.local/share/nvim;
+
+-- Config --
 local vim = vim
 local execute = vim.api.nvim_command
 local fn = vim.fn
+local folder = "...plugin."
 
 -- Check packer installation
 local install_path = fn.stdpath("data") .. "/site/pack/packer/opt/packer.nvim"
@@ -23,6 +26,7 @@ packer.init({
     package_root = util.join_paths(vim.fn.stdpath("data"), "site", "pack"),
 })
 
+-- Plugin Import --
 packer.startup(function(use)
     -- Packer installer
     use ({ "wbthomason/packer.nvim", opt = true })
@@ -39,12 +43,12 @@ packer.startup(function(use)
     use ({ 
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
-        config = require("markdown_preview_setup")
+        config = require(folder .. "markdown_preview_setup")
     })
 
     -- Status bar
     use ({
         "nvim-lualine/lualine.nvim",
-        config = require("lualine_setup")
+        config = require(folder .. "lualine_setup")
     })
 end)

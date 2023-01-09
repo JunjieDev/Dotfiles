@@ -8,7 +8,7 @@
 local vim = vim
 local execute = vim.api.nvim_command
 local fn = vim.fn
-local folder = "...plugin."
+local folder = "../plugin/"
 
 -- Check packer installation
 local install_path = fn.stdpath("data") .. "/site/pack/packer/opt/packer.nvim"

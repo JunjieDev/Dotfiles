@@ -39,6 +39,7 @@ packer.startup(function(use)
     use ({ 
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
+        config = require("markdown_preview_setup")
     })
 
     -- Status bar

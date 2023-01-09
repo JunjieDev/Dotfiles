@@ -1,7 +1,8 @@
 --=================================================================================
 --                                    Packer-Config 
 --=================================================================================
--- URL : https://github.com/wbthomason/packer.nvim
+-- URL           : https://github.com/wbthomason/packer.nvim
+-- Reset package : rm -rf ~/.local/share/nvim;
 local vim = vim
 local execute = vim.api.nvim_command
 local fn = vim.fn
@@ -29,7 +30,6 @@ packer.startup(function(use)
 -- Setting -- 
     -- Nvim-web-devicons
     use ({ "kyazdani42/nvim-web-devicons" })
-
 
 -- Customization --
     -- Better mappings

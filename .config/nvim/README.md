@@ -6,6 +6,17 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 
 |  Directory/File  |                         Description                          |
 |------------------|--------------------------------------------------------------|
+| `depth/`         | Folder That contains all the test config/plugin/example      |
+| `doc/`           | Contains documentation and help files                        |
+| `init.lua`       | Main file for the neovim configuration and the require file  |
+| `lua`            | Folder container the setting/mapping and folder plugin config|
+|  ⌙`plugin/`      | Contains all file configuration                              |
+
+<details>
+<summary> Directory/File example</summary>
+
+|  Directory/File  |                         Description                          |
+|------------------|--------------------------------------------------------------|
 | `filetype.lua`   | Used to set a file's lua filetype                            |
 | `autoload/`      | Scripts loaded dynamically using Vim's autoload feature      |
 | `colors/`        | Vim colorscheme files conventionally go here                 |
@@ -21,6 +32,8 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 | `depth/`         | Folder That contains all the test config/plugin              |
 
 <font size="1">* This structure is an example/idea, it is in no way an absolute truth and can be adapted according to your preference.</font>
+
+</details>
 
 ## Sources
 

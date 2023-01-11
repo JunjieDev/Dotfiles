@@ -4,6 +4,8 @@
 .android
 .cache
 .cargo
+.config/htop/
+.config/iterm2/
 .dart/
 .dartServer/
 .docker/
@@ -30,6 +32,7 @@
 .zsh_history
 .zsh_sessions/
 .zshenv
+.Trash
 
 # Directory/File
 Library

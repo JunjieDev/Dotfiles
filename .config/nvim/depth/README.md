@@ -2,56 +2,48 @@
 
 Neovim is a customizable editor. Even if, the basic configuration already allows you to do a lot. Everyone loves the customization of this one. This folder contains all the configurations or plugins to test vim/neovim in a docker container.
 
+## Structures
+
+|  Directory/File  |                         Description                          |
+|------------------|--------------------------------------------------------------|
+| `kickstart/`     | Basic directory of neovim configuration (no manager plugin)  |
+| `packer`         | Directory of configuration with packer.vim (only neovim)     |
+| `vim-plug`       | My directory of configuration with vim-plug manager plugin   |
+
+
 ## Usage
 
+### kickstart
+
 ```bash
-vim/nvim
+nvim
+```
 
-# vim-plug
-:PlugInstall
+### packer
 
-# packer
+```bash
+./preinstall 
+
+-> docker command
+
+./install.sh
 cd /root/.config/nvim
-./install
 :luafile %
 :PackerInstall
 ```
 
-## Commmande
+<font size="1">After use the container, delete the folder ./config</font>
 
-### Run container
-
-```bash
-docker build -t project_name_build .
-docker container run -it --name project_name_run project_name_build
-...
-```
-
-### Copy file (root->container)
+### vim-plug
 
 ```bash
-docker cp project_name_run:/home/fileName .
-```
-
-### Restart container
-
-```bash
-docker container start project_name_run
-docker container attach project_name_run
-```
-
-### Clear docker
-
-```bash
-docker container prune
-docker image prune
-docker volume prune
-...
-docker system prune -a
+nvim OR vim
+:PlugInstall
 ```
 
 ## Sources
 
-- [Vim-plug](https://github.com/junegunn/vim-plug)
+- [kickstart](https://github.com/nvim-lua/kickstart.nvim)
 - [Packer](https://github.com/wbthomason/packer.nvim)
+- [Vim-plug](https://github.com/junegunn/vim-plug)
 

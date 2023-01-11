@@ -1,3 +1,4 @@
 FROM ubuntu:latest
 
-ADD ./config /root/.config/nvim
+ADD config /root/.config/nvim
+ADD install.sh /install.sh

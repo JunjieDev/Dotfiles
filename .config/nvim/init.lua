@@ -11,3 +11,7 @@
 require('settings')
 require('mappings')
 require('plugins')
+
+-- Colorscheme --
+vim.cmd("colorscheme dracula")
+vim.g.lightline = { colorscheme = "dracula" }

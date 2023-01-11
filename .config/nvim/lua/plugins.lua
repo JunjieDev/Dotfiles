@@ -34,8 +34,29 @@ packer.startup(function(use)
     -- Nvim-web-devicons
     use ({ "kyazdani42/nvim-web-devicons" })
 
+-- Colors Scheme -- 
+    -- Color Scheme
+    packer.use ({ 
+        "Mofiqul/dracula.nvim", 
+        as = "dracula",
+        config = require("colors/dracula"),
+    })
+
 -- Customization --
-    -- Better mappings
+    -- Status bar
+    use ({
+        "nvim-lualine/lualine.nvim",
+        config = require("plugin/lualine_setup")
+    })
+
+    -- Modes
+    use ({
+        'mvllow/modes.nvim',
+        tag = 'v0.2.0',
+        config = require("plugin/modes_setup")
+    })
+
+   -- Better mappings
     use ({ "b0o/mapx.nvim" })
 
     -- Markdown-preview
@@ -45,9 +66,4 @@ packer.startup(function(use)
         config = require("plugin/markdown_preview_setup")
     })
 
-    -- Status bar
-    use ({
-        "nvim-lualine/lualine.nvim",
-        config = require("plugin/lualine_setup")
-    })
 end)

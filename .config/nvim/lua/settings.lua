@@ -36,10 +36,10 @@ set.cmdheight = 1
 set.splitbelow = true
 set.splitright = true
 set.wrap = false
-set.termguicolors = false 
+set.termguicolors = true
 set.hidden = true
-vim.opt.list = true
-vim.opt.listchars:append("eol:↴")
+set.list = true
+set.listchars:append("eol:↴")
 --set.signcolumn = "yes"
 --set.winbar = "%f %m"
 
@@ -64,7 +64,7 @@ set.ignorecase = true
 set.smartcase = true
 
 --- HIGHLIGHT CURSOR ---
---set.cursorline = true
+set.cursorline = true
 
 --- NAVIGATION MENU ---
 set.wildmenu = true

@@ -13,7 +13,7 @@ end
 modes.setup({
     -- Set Colors
     colors = {
-        copy = "#FF79C6", --#f5c359
+        copy = "#F1FA8C", --#f5c359
         delete = "#FF5555", --#c75c6a
         insert = "#50fa7b", --#78ccc5
         visual = "#FFB86C", --#9745be

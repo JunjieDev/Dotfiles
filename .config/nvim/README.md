@@ -32,6 +32,32 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 | `depth/`         | Folder That contains all the test config/plugin              |
 
 <font size="1">* This structure is an example/idea, it is in no way an absolute truth and can be adapted according to your preference.</font>
+</details>
+
+## Plugin
+
+<details>
+<summary> Installed</summary>
+
+- [x] Packer (Manager Package)
+- [x] Nvim-web-devicons
+- [x] Lualine
+- [x] Modes
+- [ ] Modicator
+- [x] Mapx
+- [x] Markdown-preview
+
+<font size="1"> [x] : Crossed (My Config)</font><br/>
+<font size="1"> [ ] : Unchecked (Default Config)</font><br/>
+</details>
+
+<details>
+<summary> Others</summary>
+
+- [ ] [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
+- [ ] [vim-polyglot](https://github.com/sheerun/vim-polyglot)
+- [ ] [vim-closetag](https://github.com/alvan/vim-closetag)
+- [ ] [vim-nerdtree](https://github.com/preservim/nerdtree)
 
 </details>
 

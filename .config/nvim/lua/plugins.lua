@@ -32,7 +32,7 @@ packer.startup(function(use)
 
 -- Setting -- 
     -- Nvim-web-devicons
-    use ({ "kyazdani42/nvim-web-devicons" })
+    use ({ "kyazdani42/nvim-web-devicons", })
 
 -- Colors Scheme -- 
     -- Color Scheme
@@ -46,24 +46,36 @@ packer.startup(function(use)
     -- Status bar
     use ({
         "nvim-lualine/lualine.nvim",
-        config = require("plugin/lualine_setup")
+        config = require("plugin/lualine_setup"),
     })
 
     -- Modes
     use ({
         'mvllow/modes.nvim',
         tag = 'v0.2.0',
-        config = require("plugin/modes_setup")
+        config = require("plugin/modes_setup"),
+    })
+
+    -- Modicator
+    use ({ 'melkster/modicator.nvim',
+        after = 'dracula.nvim', -- Add your colorscheme plugin here
+        setup = function()
+            -- These are required for Modicator to work
+            vim.o.cursorline = true
+            vim.o.number = true
+            vim.o.termguicolors = true
+        end,
+        config = require("plugin/modicator_setup"),
     })
 
    -- Better mappings
-    use ({ "b0o/mapx.nvim" })
+    use ({ "b0o/mapx.nvim", })
 
     -- Markdown-preview
     use ({ 
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
-        config = require("plugin/markdown_preview_setup")
+        config = require("plugin/markdown_preview_setup"),
     })
 
 end)

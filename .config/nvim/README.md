@@ -46,6 +46,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] Modicator
 - [x] Mapx
 - [x] Markdown-preview
+- [ ] Barbar
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [ ] : Unchecked (Default Config)</font><br/>

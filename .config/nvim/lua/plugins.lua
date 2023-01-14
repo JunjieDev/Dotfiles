@@ -49,6 +49,12 @@ packer.startup(function(use)
         config = require("plugin/lualine_setup"),
     })
 
+    -- Barbar
+    use ({ 
+	    "romgrk/barbar.nvim",
+	    config = require("plugin/barbar_setup")
+    })
+
     -- Modes
     use ({
         'mvllow/modes.nvim',

@@ -39,14 +39,14 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 <details>
 <summary> Installed</summary>
 
-- [x] Packer (Manager Package)
-- [x] Nvim-web-devicons
-- [x] Lualine
-- [x] Modes
-- [ ] Modicator
-- [x] Mapx
-- [x] Markdown-preview
-- [ ] Barbar
+- [x] [Packer (Manager Package)](https://github.com/wbthomason/packer.nvim)
+- [x] [Nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [x] [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [x] [Modes](https://github.com/mvllow/modes.nvim)
+- [ ] [Modicator](https://github.com/mawkler/modicator.nvim)
+- [x] [Mapx](https://github.com/b0o/mapx.nvim)
+- [x] [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
+- [ ] [Barbar](https://github.com/romgrk/barbar.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [ ] : Unchecked (Default Config)</font><br/>
@@ -55,10 +55,31 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 <details>
 <summary> Others</summary>
 
-- [ ] [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
-- [ ] [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-- [ ] [vim-closetag](https://github.com/alvan/vim-closetag)
-- [ ] [vim-nerdtree](https://github.com/preservim/nerdtree)
+- [ ] [Nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [ ] [Vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
+- [ ] [Vim-polyglot](https://github.com/sheerun/vim-polyglot)
+- [ ] [Vim-closetag](https://github.com/alvan/vim-closetag)
+- [ ] [Vim-nerdtree](https://github.com/preservim/nerdtree)
+- [ ] [Auto Pair](https://github.com/windwp/nvim-autopairs)
+- [ ] [Comment](https://github.com/numToStr/Comment.nvim)
+- [ ] [Auto indent detection](https://github.com/tpope/vim-sleuth)
+- Surround :
+    - [ ] [ur4ltz](https://github.com/ur4ltz/surround.nvim)
+    - [ ] [tpope](https://github.com/tpope/vim-surround)
+- [ ] [Lazygit](https://github.com/kdheepak/lazygit.nvim)
+- [ ] [Indent-backline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [ ] [GitSigns](https://github.com/lewis6991/gitsigns.nvim)
+- [ ] [GitBlame](https://github.com/f-person/git-blame.nvim)
+- [ ] [Trouble](https://github.com/folke/trouble.nvim)
+- [ ] [vim-auto-save](https://github.com/907th/vim-auto-save)
+- [ ] [Telescope :](https://github.com/nvim-telescope/telescope.nvim)
+    - [ ] [Telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+    - [ ] [Telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzy-native.nvim)
+    - [ ] [Telescope-project](https://github.com/nvim-telescope/telescope-project.nvim)
+- [ ] [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [ ] [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+- [ ] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+- [ ] [Lspkind](https://github.com/onsails/lspkind.nvim)
 
 </details>
 

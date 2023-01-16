@@ -84,4 +84,10 @@ packer.startup(function(use)
         config = require("plugin/markdown_preview_setup"),
     })
 
+    -- Indent-blankline
+    use ({
+        'lukas-reineke/indent-blankline.nvim',
+        config = require("plugin/indent_blankline_setup"),
+    })
+
 end)

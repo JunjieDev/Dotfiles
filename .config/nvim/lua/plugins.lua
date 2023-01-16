@@ -75,7 +75,9 @@ packer.startup(function(use)
     })
 
    -- Better mappings
-    use ({ "b0o/mapx.nvim", })
+    use ({ 
+        "b0o/mapx.nvim", 
+    })
 
     -- Markdown-preview
     use ({ 
@@ -88,6 +90,12 @@ packer.startup(function(use)
     use ({
         'lukas-reineke/indent-blankline.nvim',
         config = require("plugin/indent_blankline_setup"),
+    })
+
+    -- Guess-indent
+    use ({
+        'nmac427/guess-indent.nvim',
+        config = require("plugin/guess_indent_setup"),
     })
 
 end)

@@ -47,6 +47,8 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [x] [Mapx](https://github.com/b0o/mapx.nvim)
 - [x] [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
 - [ ] [Barbar](https://github.com/romgrk/barbar.nvim)
+- [x] [Indent-backline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [x] [Guess-indent](https://github.com/NMAC427/guess-indent.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [ ] : Unchecked (Default Config)</font><br/>
@@ -67,7 +69,6 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [ur4ltz](https://github.com/ur4ltz/surround.nvim)
     - [ ] [tpope](https://github.com/tpope/vim-surround)
 - [ ] [Lazygit](https://github.com/kdheepak/lazygit.nvim)
-- [ ] [Indent-backline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [ ] [GitSigns](https://github.com/lewis6991/gitsigns.nvim)
 - [ ] [GitBlame](https://github.com/f-person/git-blame.nvim)
 - [ ] [Trouble](https://github.com/folke/trouble.nvim)

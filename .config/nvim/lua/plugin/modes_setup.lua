@@ -3,7 +3,9 @@
 -- ==================================================================================
 -- URL         : https://github.com/mvllow/modes.nvim
 
+-- VARIABLE --
 local ok, modes = pcall(require, "modes")
+
 if not ok then
     do
         return

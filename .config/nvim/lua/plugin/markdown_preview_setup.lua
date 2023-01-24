@@ -3,15 +3,15 @@
 -- ==================================================================================
 -- URL         : https://github.com/iamcco/markdown-preview.nvim
 
+-- VARIABLE --
+local vg = vim.g
 local ok, makdown = pcall(require, "markdown-preview")
+
 if not ok then
      do
           return
      end
 end
-
--- VARIABLE --
-local vg = vim.g
 
 -- set to 1, nvim will open the preview window after entering the markdown buffer
 vg.mkdp_auto_start = 0 -- (default : 0)

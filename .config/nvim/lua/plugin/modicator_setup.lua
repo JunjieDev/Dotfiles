@@ -3,7 +3,9 @@
 -- ==================================================================================
 -- URL         : https://github.com/mawkler/modicator.nvim
 
+-- VARIABLE --
 local ok, modicator = pcall(require, "modicator")
+
 if not ok then
     do
         return

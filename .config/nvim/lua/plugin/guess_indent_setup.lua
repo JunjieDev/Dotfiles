@@ -3,7 +3,9 @@
 -- ==================================================================================
 -- URL         : https://github.com/NMAC427/guess-indent.nvim
 
+-- VARIABLE --
 local ok, guessIndent = pcall(require, "guess-indent")
+
 if not ok then
     do
         return

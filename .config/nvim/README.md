@@ -2,6 +2,14 @@
 
 Neovim is a text editor. It is directly inspired by Vim. I love the way of processes, handling of files and personal customization.
 
+### Command
+
+|  Command         |                         Description                          |
+|------------------|--------------------------------------------------------------|
+| :PackerInstall   | Command for install all plugins                              |
+| :Masos           | Command for check lsp language                               |
+
+
 ## Structures
 
 |  Directory/File  |                         Description                          |

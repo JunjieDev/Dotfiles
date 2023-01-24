@@ -1,5 +1,5 @@
 -- ==================================================================================
---                                      Lualine 
+--                                      Lualine
 -- ==================================================================================
 -- URL         : https://github.com/nvim-lualine/lualine.nvim
 
@@ -15,19 +15,19 @@ lualine.setup({
         icons_enabled = true,
         -- https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
         theme = 'OceanicNext',
-        component_separators = { left = '', right = ''},
-        section_separators = { left = '', right = ''},
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
         disabled_filetypes = {},
         always_divide_middle = true,
         globalstatus = false,
-     },
+    },
     sections = {
-        lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_a = { 'mode' },
+        lualine_b = { 'branch', 'diff', 'diagnostics' },
         -- all path : %F
         -- file recurrent : filename
-        lualine_c = {'%F'},
-        lualine_x = {'encoding',
+        lualine_c = { '%F' },
+        lualine_x = { 'encoding',
             {
                 'fileformat',
                 --  
@@ -39,14 +39,14 @@ lualine.setup({
             },
             'filetype'
         },
-        lualine_y = {'progress'},
-        lualine_z = {'location'},
+        lualine_y = { 'progress' },
+        lualine_z = { 'location' },
     },
     inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = {'filename'},
-        lualine_x = {'location'},
+        lualine_c = { 'filename' },
+        lualine_x = { 'location' },
         lualine_y = {},
         lualine_z = {}
     },

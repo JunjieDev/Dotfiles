@@ -1,13 +1,13 @@
 -- ==================================================================================
---                                     Markdown-Preview 
+--                                     Markdown-Preview
 -- ==================================================================================
 -- URL         : https://github.com/iamcco/markdown-preview.nvim
 
 local ok, makdown = pcall(require, "markdown-preview")
 if not ok then
-    do
-        return
-    end
+     do
+          return
+     end
 end
 
 -- VARIABLE --
@@ -97,7 +97,7 @@ vg.mkdp_page_title = '「${name}」' -- (default : '「${name}」')
 
 -- recognized filetypes
 -- these filetypes will have MarkdownPreview... commands
-vg.mkdp_filetypes = {'markdown'} -- (default : {'markdown'})
+vg.mkdp_filetypes = { 'markdown' } -- (default : {'markdown'})
 
 -- set theme (dark or light)
 -- By default the theme is define according to the preferences of the system

@@ -1,5 +1,5 @@
 -- ==================================================================================
---                                    Packer-Config 
+--                                    Packer-Config
 -- ==================================================================================
 -- URL           : https://github.com/wbthomason/packer.nvim
 -- Reset package : rm -rf ~/.local/share/nvim;
@@ -28,42 +28,42 @@ packer.init({
 -- Plugin Import --
 packer.startup(function(use)
     -- Packer installer
-    use ({ "wbthomason/packer.nvim", opt = true })
+    use({ "wbthomason/packer.nvim", opt = true })
 
--- Setting -- 
+    -- Setting --
     -- Nvim-web-devicons
-    use ({ "kyazdani42/nvim-web-devicons", })
+    use({ "kyazdani42/nvim-web-devicons", })
 
--- Colors Scheme -- 
+    -- Colors Scheme --
     -- Color Scheme
-    packer.use ({ 
-        "Mofiqul/dracula.nvim", 
+    packer.use({
+        "Mofiqul/dracula.nvim",
         as = "dracula",
         config = require("colors/dracula"),
     })
 
--- Customization --
+    -- Customization --
     -- Status bar
-    use ({
+    use({
         "nvim-lualine/lualine.nvim",
         config = require("plugin/lualine_setup"),
     })
 
     -- Barbar
-    use ({ 
-	    "romgrk/barbar.nvim",
-	    config = require("plugin/barbar_setup")
+    use({
+        "romgrk/barbar.nvim",
+        config = require("plugin/barbar_setup")
     })
 
     -- Modes
-    use ({
+    use({
         'mvllow/modes.nvim',
         tag = 'v0.2.0',
         config = require("plugin/modes_setup"),
     })
 
     -- Modicator
-    use ({ 'melkster/modicator.nvim',
+    use({ 'melkster/modicator.nvim',
         after = 'dracula.nvim', -- Add your colorscheme plugin here
         setup = function()
             -- These are required for Modicator to work
@@ -74,28 +74,41 @@ packer.startup(function(use)
         config = require("plugin/modicator_setup"),
     })
 
-   -- Better mappings
-    use ({ 
-        "b0o/mapx.nvim", 
+    -- Better mappings
+    use({
+        "b0o/mapx.nvim",
     })
 
     -- Markdown-preview
-    use ({ 
+    use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
         config = require("plugin/markdown_preview_setup"),
     })
 
     -- Indent-blankline
-    use ({
+    use({
         'lukas-reineke/indent-blankline.nvim',
         config = require("plugin/indent_blankline_setup"),
     })
 
     -- Guess-indent
-    use ({
+    use({
         'nmac427/guess-indent.nvim',
         config = require("plugin/guess_indent_setup"),
+    })
+
+    -- Native LSP
+    use({
+        --"simrat39/rust-tools.nvim", -- Rust Custom LSP
+        "L3MON4D3/LuaSnip", -- Snippets engine
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig", --LSP config
+        --"hrsh7th/nvim-cmp", -- Completion engine
+        --"hrsh7th/cmp-nvim-lsp", -- LSP completion
+        --"saadparwaiz1/cmp_luasnip", -- Snippets cmp
+        config = require("plugin/lsp_setup");
     })
 
 end)

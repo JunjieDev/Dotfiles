@@ -46,11 +46,21 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Modicator](https://github.com/mawkler/modicator.nvim)
 - [x] [Mapx](https://github.com/b0o/mapx.nvim)
 - [x] [Markdown-preview](https://github.com/iamcco/markdown-preview.nvim)
-- [ ] [Barbar](https://github.com/romgrk/barbar.nvim)
+- [x] [Barbar](https://github.com/romgrk/barbar.nvim)
 - [x] [Indent-backline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [x] [Guess-indent](https://github.com/NMAC427/guess-indent.nvim)
+- LSP :
+    - [-] [Rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)
+    - [ ] [Luasnip](https://github.com/L3MON4D3/LuaSnip)
+    - [x] [Mason.nvim](https://github.com/williamboman/mason.nvim)
+    - [x] [Mason_lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+    - [-] [Nvim_cmp](https://github.com/hrsh7th/nvim-cmp)
+    - [-] [Cmp_nvim_lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+    - [-] [Cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+    - [x] [Nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
+<font size="1"> [-] : Commend & not installed</font><br/>
 <font size="1"> [ ] : Unchecked (Default Config)</font><br/>
 </details>
 

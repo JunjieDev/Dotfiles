@@ -1,5 +1,5 @@
 -- ==================================================================================
---                                       Setting 
+--                                       Setting
 -- ==================================================================================
 --- TIPS ---
 -- :help option-list
@@ -51,7 +51,7 @@ set.linespace = 5
 set.shiftwidth = 4
 set.tabstop = 4
 set.expandtab = true
-set.scrolloff = 5 
+set.scrolloff = 5
 set.smartindent = true
 set.smarttab = true
 set.softtabstop = 2

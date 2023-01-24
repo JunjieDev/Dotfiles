@@ -1,5 +1,5 @@
 -- ==================================================================================
---                                      Mappings 
+--                                      Mappings
 -- ==================================================================================
 -- URL         : https://github.com/b0o/mapx.nvim
 
@@ -11,7 +11,7 @@ local ok_m, mapx = pcall(require, "mapx")
 --- LEADER ---
 vim.g.mapleader = " "
 
-if ok_m then 
+if ok_m then
     --- Use ---
     -- -- Disable the row key
     mapx.nnoremap("<up>", "<nop>", "silent")
@@ -48,10 +48,10 @@ if ok_m then
     mapx.nnoremap("<leader>tt", ":tabnew<CR>", "silent")
     -- -- To go to the next tab.
     mapx.nnoremap("<leader>tn", ":tabnext<CR>", "silent")
-        --mapx.noremap("<S-L>", ":tabnext<CR>", "silent")
+    --mapx.noremap("<S-L>", ":tabnext<CR>", "silent")
     -- -- To go to the preview tab.
     mapx.nnoremap("<leader>tp", ":tabprev<CR>", "silent")
-        --mapx.noremap("<S-H>", ":tabprev<CR>", "silent")
+    --mapx.noremap("<S-H>", ":tabprev<CR>", "silent")
     -- -- To close all other tab.
     mapx.nnoremap("<leader>to", ":tabo<CR>", "silent")
 
@@ -67,32 +67,32 @@ if ok_m then
 
     --- No Use ---
     -- -- window navigation
-        --m.nnoremap("<F2>", "<C-w>w", "silent")
-        --m.nnoremap("<C-=>", ":vertical resize +2<CR>", "silent")
-        --m.nnoremap("<C-->", ":vertical resize -2<CR>", "silent")
-        --m.nnoremap("<C-]>", ":resize +2<CR>", "silent")
-        --m.nnoremap("<C-[>", ":resize -2<CR>", "silent")
+    --m.nnoremap("<F2>", "<C-w>w", "silent")
+    --m.nnoremap("<C-=>", ":vertical resize +2<CR>", "silent")
+    --m.nnoremap("<C-->", ":vertical resize -2<CR>", "silent")
+    --m.nnoremap("<C-]>", ":resize +2<CR>", "silent")
+    --m.nnoremap("<C-[>", ":resize -2<CR>", "silent")
 
     -- -- Turn off vim search highlighting
-        --m.nnoremap("<c-n>", ":nohl", "silent")
+    --m.nnoremap("<c-n>", ":nohl", "silent")
 
     -- -- Delete one line or block
-        --m.nnoremap("<leader>d", "dd", "silent")
+    --m.nnoremap("<leader>d", "dd", "silent")
 
     -- -- Press \p to print the current file to the default printer from a Linux operating system.
     -- -- View available printers:   lpstat -v
     -- -- Set default printer:       lpoptions -d <printer_name>
     -- -- <silent> means do not display output.
-        --m.nnoremap("<leader>p", ":%w !lp<CR>", "silent")
+    --m.nnoremap("<leader>p", ":%w !lp<CR>", "silent")
 
     -- -- Press the space bar to type the : character in command mode.
-        --m.nnoremap("<space>", ":", "silent")
+    --m.nnoremap("<space>", ":", "silent")
 
     -- -- Pressing the letter o will open a new line below the current one.
     -- -- Exit insert mode after creating a new line above or below the current line.
-        --m.nnoremap("o", "o<esc>", "silent")
-        --m.nnoremap("O", "O<esc>", "silent")
+    --m.nnoremap("o", "o<esc>", "silent")
+    --m.nnoremap("O", "O<esc>", "silent")
 
     -- -- lazygit
-        --m.nnoremap("<leader>gg", ":LazyGit<CR>", "silent")
+    --m.nnoremap("<leader>gg", ":LazyGit<CR>", "silent")
 end

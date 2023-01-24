@@ -10,14 +10,14 @@
 --- VARIABLE ---
 local set = vim.opt
 local setglobal = vim.opt_global
-local setlocal = vim.opt_local
+--local setlocal = vim.opt_local
 
 --- CONFIG --
-fileencoding = "UTF-8"
-scriptencoding = "UTF-8"
-filetype = on
-syntax = on
+setglobal.fileencoding = "UTF-8"
 set.encoding = "UTF-8"
+scriptencoding = "UTF-8"
+setglobal.filetype = on
+setglobal.syntax = on
 set.fileencodings = "utf-8,sjis,euc-jp,latin"
 
 --- SETTING ---

@@ -98,6 +98,13 @@ packer.startup(function(use)
         config = require("plugin/guess_indent_setup"),
     })
 
+    -- File Exploration
+    use({
+        'nvim-tree/nvim-tree.lua',
+        tag = 'nightly', -- optional, updated every week. (see issue #1193)
+        config = require("plugin/nvim_tree_setup"),
+    })
+
     -- Native LSP
     use({
         --"simrat39/rust-tools.nvim", -- Rust Custom LSP

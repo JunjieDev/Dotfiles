@@ -7,7 +7,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 |  Command         |                         Description                          |
 |------------------|--------------------------------------------------------------|
 | :PackerInstall   | Command for install all plugins                              |
-| :Masos           | Command for check lsp language                               |
+| :Mason           | Command for check lsp language                               |
 
 
 ## Structures

@@ -120,7 +120,10 @@ packer.startup(function(use)
     use({ "mg979/vim-visual-multi", })
 
     -- Toggler : () - {} - [] - '' - ""
-    use({ "windwp/nvim-autopairs", })
+    use({
+        "windwp/nvim-autopairs",
+        config = require("plugin/nvim_autopairs_setup"),
+    })
     use({
         "rmagatti/alternate-toggler",
         config = require("plugin/alternate_toggler_setup"),

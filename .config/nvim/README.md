@@ -67,7 +67,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [-] [Cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
     - [x] [Nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [x] [Alternate-toggler]()https://github.com/rmagatti/alternate-toggler
-- [ ] [Auto Pair](https://github.com/windwp/nvim-autopairs)
+- [x] [Auto Pair](https://github.com/windwp/nvim-autopairs)
 - [ ] [Vim-visual-multi](https://github.com/mg979/vim-visual-multi)
 - [ ] [Wildfire](https://github.com/gcmt/wildfire.vim)
 - Surround :

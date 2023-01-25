@@ -13,9 +13,9 @@ local setglobal = vim.opt_global
 --local setlocal = vim.opt_local
 
 --- CONFIG --
-setglobal.fileencoding = "UTF-8"
+set.fileencoding = "UTF-8"
 set.encoding = "UTF-8"
-scriptencoding = "UTF-8"
+vim.scriptencoding = "UTF-8"
 setglobal.filetype = on
 setglobal.syntax = on
 set.fileencodings = "utf-8,sjis,euc-jp,latin"
@@ -36,10 +36,11 @@ set.cmdheight = 1
 set.splitbelow = true
 set.splitright = true
 set.wrap = false
+set.swapfile = true
 set.termguicolors = true
 set.hidden = true
 set.list = true
-set.listchars:append("eol:↴")
+set.listchars:append("eol:↴") --unnamedplus
 --set.signcolumn = "yes"
 --set.winbar = "%f %m"
 
@@ -48,10 +49,11 @@ set.linebreak = true
 set.linespace = 5
 
 --- TAB & SPACES & INDENT ---
-set.shiftwidth = 4
-set.tabstop = 4
+set.shiftwidth = 2
+set.tabstop = 2
 set.expandtab = true
 set.scrolloff = 5
+set.sidescrolloff = 5
 set.smartindent = true
 set.smarttab = true
 set.softtabstop = 2
@@ -72,3 +74,13 @@ set.wildmenu = true
 --- TIME ---
 set.ttimeout = true
 set.ttimeoutlen = 50
+
+--- Function : copie ---
+--vim.api.nvim_create_autocmd('TextYankPost', {
+--    callback = function()
+--        vim.highlight.on_yank({
+--            higroup = 'InSearch',
+--            timeout = 300
+--        })
+--    end
+--})

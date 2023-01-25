@@ -28,11 +28,14 @@ packer.init({
 -- Plugin Import --
 packer.startup(function(use)
     -- Packer installer
-    use({ "wbthomason/packer.nvim", opt = true })
+    use({ "wbthomason/packer.nvim", opt = true, })
 
     -- Setting --
     -- Nvim-web-devicons
     use({ "kyazdani42/nvim-web-devicons", })
+
+    -- Better mappings
+    use({ "b0o/mapx.nvim", })
 
     -- Colors Scheme --
     -- Color Scheme
@@ -57,14 +60,14 @@ packer.startup(function(use)
 
     -- Modes
     use({
-        'mvllow/modes.nvim',
-        tag = 'v0.2.0',
+        "mvllow/modes.nvim",
+        tag = "v0.2.0",
         config = require("plugin/modes_setup"),
     })
 
     -- Modicator
-    use({ 'melkster/modicator.nvim',
-        after = 'dracula.nvim', -- Add your colorscheme plugin here
+    use({ "melkster/modicator.nvim",
+        after = "dracula.nvim", -- Add your colorscheme plugin here
         setup = function()
             -- These are required for Modicator to work
             vim.o.cursorline = true
@@ -72,11 +75,6 @@ packer.startup(function(use)
             vim.o.termguicolors = true
         end,
         config = require("plugin/modicator_setup"),
-    })
-
-    -- Better mappings
-    use({
-        "b0o/mapx.nvim",
     })
 
     -- Markdown-preview
@@ -88,20 +86,20 @@ packer.startup(function(use)
 
     -- Indent-blankline
     use({
-        'lukas-reineke/indent-blankline.nvim',
+        "lukas-reineke/indent-blankline.nvim",
         config = require("plugin/indent_blankline_setup"),
     })
 
     -- Guess-indent
     use({
-        'nmac427/guess-indent.nvim',
+        "nmac427/guess-indent.nvim",
         config = require("plugin/guess_indent_setup"),
     })
 
     -- File Exploration
     use({
-        'nvim-tree/nvim-tree.lua',
-        tag = 'nightly', -- optional, updated every week. (see issue #1193)
+        "nvim-tree/nvim-tree.lua",
+        tag = "nightly", -- optional, updated every week. (see issue #1193)
         config = require("plugin/nvim_tree_setup"),
     })
 
@@ -115,7 +113,23 @@ packer.startup(function(use)
         --"hrsh7th/nvim-cmp", -- Completion engine
         --"hrsh7th/cmp-nvim-lsp", -- LSP completion
         --"saadparwaiz1/cmp_luasnip", -- Snippets cmp
-        config = require("plugin/lsp_setup");
+        config = require("plugin/lsp_setup"),
     })
+
+    -- Multi-Cursor
+    use({ "mg979/vim-visual-multi", })
+
+    -- Toggler : () - {} - [] - '' - ""
+    use({ "windwp/nvim-autopairs", })
+    use({
+        "rmagatti/alternate-toggler",
+        config = require("plugin/alternate_toggler_setup"),
+    })
+    use({ "gcmt/wildfire.vim", })
+
+    -- Surround
+    use({ "tpope/vim-surround", })
+    --use({ "ur4ltz/surround", })
+    --use({ "kylechui/nvim-surround", })
 
 end)

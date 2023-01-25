@@ -66,6 +66,14 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [-] [Cmp_nvim_lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
     - [-] [Cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
     - [x] [Nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [x] [Alternate-toggler]()https://github.com/rmagatti/alternate-toggler
+- [ ] [Auto Pair](https://github.com/windwp/nvim-autopairs)
+- [ ] [Vim-visual-multi](https://github.com/mg979/vim-visual-multi)
+- [ ] [Wildfire](https://github.com/gcmt/wildfire.vim)
+- Surround :
+    - [ ] [tpope](https://github.com/tpope/vim-surround)
+    - [-] [ur4ltz](https://github.com/ur4ltz/surround.nvim)
+    - [-] [kylechui](https://github.com/kylechui/nvim-surround)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>
@@ -80,12 +88,8 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [ ] [Vim-closetag](https://github.com/alvan/vim-closetag)
 - [ ] [Vim-nerdtree](https://github.com/preservim/nerdtree)
-- [ ] [Auto Pair](https://github.com/windwp/nvim-autopairs)
 - [ ] [Comment](https://github.com/numToStr/Comment.nvim)
 - [ ] [Auto indent detection](https://github.com/tpope/vim-sleuth)
-- Surround :
-    - [ ] [ur4ltz](https://github.com/ur4ltz/surround.nvim)
-    - [ ] [tpope](https://github.com/tpope/vim-surround)
 - [ ] [Lazygit](https://github.com/kdheepak/lazygit.nvim)
 - [ ] [GitSigns](https://github.com/lewis6991/gitsigns.nvim)
 - [ ] [GitBlame](https://github.com/f-person/git-blame.nvim)

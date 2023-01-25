@@ -20,7 +20,6 @@ if not ok or not ok_m then
 end
 
 tree.setup({
-    auto_close = true,
     view = {
         adaptive_size = true,
     },

@@ -5,7 +5,7 @@
 
 --- VARIABLE ---
 local opts = { noremap = true, silent = true }
-local map = vim.api.nvim_set_keymap
+-- local map = vim.api.nvim_set_keymap
 -- exempl : map('n', '<up>', '<nop>', opts)
 local ok_m, mapx = pcall(require, "mapx")
 
@@ -64,6 +64,12 @@ if ok_m then
     -- -- Press \\ to jump back to the last cursor position
     mapx.nnoremap("<leader>\\", "``", opts)
 
+    -- -- Split : vertical - horizontal - close
+    -- split vetical and back to main nvim -> :vsplit<Return><C-w>w
+    mapx.nnoremap("<leader>vs", ":vsplit<CR>", opts)
+    mapx.nnoremap("<leader>hs", ":split<CR>", opts)
+    mapx.nnoremap("<leader>close", ":close<CR>", opts)
+
 
 
     --- No Use ---
@@ -73,6 +79,17 @@ if ok_m then
     --m.nnoremap("<C-->", ":vertical resize -2<CR>", opts)
     --m.nnoremap("<C-]>", ":resize +2<CR>", opts)
     --m.nnoremap("<C-[>", ":resize -2<CR>", opts)
+
+    -- -- Save & Exit
+    --mapx.nnoremap("<leader>w", "<cmd>w<cr>", opts)
+    --mapx.nnoremap("<leader>q", "<cmd>q<cr>", opts)
+
+    -- -- Select All file
+    --mapx.nnoremap("<leader>a", "gg<S-v>G", opts)
+
+    -- -- Move into quick text
+    --mapx.nnoremap("H", "^", opts)
+    --mapx.nnoremap("L", "$", opts)
 
     -- -- Turn off vim search highlighting
     --m.nnoremap("<c-n>", ":nohl", opts)

@@ -44,11 +44,11 @@ local on_attach = function(_, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   mapx.nnoremap("gD", "vim.lsp.buf.declaration", bufopts)
   mapx.nnoremap("gd", "vim.lsp.buf.definition", bufopts)
-  mapx.nnoremap("<space>k", "vim.lsp.buf.hover", bufopts)
+  mapx.nnoremap("<leader>k", "vim.lsp.buf.hover", bufopts)
   mapx.nnoremap("gi", "vim.lsp.buf.implementation", bufopts)
   mapx.nnoremap("<C-k>", "vim.lsp.buf.signature_help", bufopts)
-  mapx.nnoremap("<space>rn", "vim.lsp.buf.rename", bufopts)
-  mapx.nnoremap("<space>ca", "vim.lsp.buf.code_action", bufopts)
+  mapx.nnoremap("<leader>rn", "vim.lsp.buf.rename", bufopts)
+  mapx.nnoremap("<leader>ca", "vim.lsp.buf.code_action", bufopts)
   mapx.nnoremap("gr", "vim.lsp.buf.references", bufopts)
 
   -- Format on save

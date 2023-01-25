@@ -3,6 +3,7 @@
 -- ==================================================================================
 -- URL         : https://github.com/rmagatti/alternate-toggler
 
+-- VARIABLE --
 local ok, alternate_toggler = pcall(require, "alternate-toggler")
 local ok_m, mapx = pcall(require, "mapx")
 

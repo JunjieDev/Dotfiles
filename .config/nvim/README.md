@@ -74,6 +74,11 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [tpope](https://github.com/tpope/vim-surround)
     - [-] [ur4ltz](https://github.com/ur4ltz/surround.nvim)
     - [-] [kylechui](https://github.com/kylechui/nvim-surround)
+- [ ] [Telescope :](https://github.com/nvim-telescope/telescope.nvim)
+    - [ ] [Telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+    - [ ] [Telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzy-native.nvim)
+    - [ ] [Telescope-project](https://github.com/nvim-telescope/telescope-project.nvim)
+    - [ ] [Nvim-neoclip](https://github.com/AckslD/nvim-neoclip.lua)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>
@@ -95,10 +100,6 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [GitBlame](https://github.com/f-person/git-blame.nvim)
 - [ ] [Trouble](https://github.com/folke/trouble.nvim)
 - [ ] [vim-auto-save](https://github.com/907th/vim-auto-save)
-- [ ] [Telescope :](https://github.com/nvim-telescope/telescope.nvim)
-    - [ ] [Telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim)
-    - [ ] [Telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzy-native.nvim)
-    - [ ] [Telescope-project](https://github.com/nvim-telescope/telescope-project.nvim)
 - [ ] [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [ ] [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
 - [ ] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)

@@ -43,13 +43,14 @@ mapx.nnoremap("]d", "vim.diagnostic.goto_next", opts)
 local on_attach = function(_, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   mapx.nnoremap("gD", "vim.lsp.buf.declaration", bufopts)
-  mapx.nnoremap("gd", "vim.lsp.buf.definition", bufopts)
+  mapx.nnoremap("gd", "<cmd>Telescope lsp_definitions<cr>", bufopts)
   mapx.nnoremap("<leader>k", "vim.lsp.buf.hover", bufopts)
   mapx.nnoremap("gi", "vim.lsp.buf.implementation", bufopts)
   mapx.nnoremap("<C-k>", "vim.lsp.buf.signature_help", bufopts)
   mapx.nnoremap("<leader>rn", "vim.lsp.buf.rename", bufopts)
   mapx.nnoremap("<leader>ca", "vim.lsp.buf.code_action", bufopts)
   mapx.nnoremap("gr", "vim.lsp.buf.references", bufopts)
+  mapx.nnoremap("<leader>d", "<cmd>Telescope lsp_document_symbols<cr>", bufopts)
 
   -- Format on save
   vim.api.nvim_create_autocmd('BufWritePre', {

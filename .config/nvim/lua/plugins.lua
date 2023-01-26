@@ -103,6 +103,18 @@ packer.startup(function(use)
         config = require("plugin/nvim_tree_setup"),
     })
 
+    -- Telescope
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        requires = { { 'nvim-lua/plenary.nvim' } },
+        config = require("plugin/telescope_setup"),
+    }
+    -- Telescope-Extra-Module
+    packer.use({ "nvim-telescope/telescope-file-browser.nvim" })
+    packer.use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+    packer.use({ "nvim-telescope/telescope-project.nvim" })
+    packer.use({ "AckslD/nvim-neoclip.lua" })
+
     -- Native LSP
     use({
         --"simrat39/rust-tools.nvim", -- Rust Custom LSP

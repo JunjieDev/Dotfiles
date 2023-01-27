@@ -114,6 +114,7 @@ packer.startup(function(use)
     packer.use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
     packer.use({ "nvim-telescope/telescope-project.nvim" })
     packer.use({ "AckslD/nvim-neoclip.lua" })
+    packer.use({ "tom-anders/telescope-vim-bookmarks.nvim" })
 
     -- Native LSP
     use({
@@ -147,4 +148,10 @@ packer.startup(function(use)
     --use({ "ur4ltz/surround", })
     --use({ "kylechui/nvim-surround", })
 
+
+    -- Bookmarks
+    use({
+        "MattesGroeger/vim-bookmarks",
+        config = require("plugin/bookmarks_setup"),
+    })
 end)

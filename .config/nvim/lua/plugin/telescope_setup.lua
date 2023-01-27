@@ -56,8 +56,8 @@ telescope.setup {
       hijack_netrw = true,
       mappings = {
         ["i"] = {
-            ["<A-t>"] = fb_actions.change_cwd,
-            ["<C-t>"] = actions.select_tab,
+          ["<A-t>"] = fb_actions.change_cwd,
+          ["<C-t>"] = actions.select_tab,
         },
       },
     },
@@ -72,7 +72,7 @@ telescope.setup {
       order_by = "asc",
       search_by = "title",
       sync_with_nvim_tree = true -- default : false
-    }
+    },
   }
 }
 
@@ -81,6 +81,7 @@ telescope.load_extension("file_browser")
 telescope.load_extension("fzf")
 telescope.load_extension("project")
 telescope.load_extension("neoclip")
+telescope.load_extension("vim_bookmarks")
 
 -- Basic Shortcut
 local opts = { noremap = true, silent = true }
@@ -94,3 +95,6 @@ mapx.nnoremap("<leader>fd", ":Telescope file_browser<CR>", opts)
 mapx.nnoremap("<leader>fp", ":Telescope project<CR>", opts)
 -- Neoclip
 mapx.nnoremap("<leader>nc", ":Telescope neoclip<CR>", opts)
+-- Bookmarks
+mapx.nnoremap("<leader>ma", ":Telescope vim_bookmarks all", opts)
+mapx.nnoremap("<leader>mc", ":Telescope vim_bookmarks current_file", opts)

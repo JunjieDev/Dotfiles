@@ -116,6 +116,16 @@ packer.startup(function(use)
     packer.use({ "AckslD/nvim-neoclip.lua" })
     packer.use({ "tom-anders/telescope-vim-bookmarks.nvim" })
 
+    -- CMP
+    use({
+        "hrsh7th/nvim-cmp", -- Completion engine
+        "hrsh7th/cmp-nvim-lsp", -- LSP completion
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "saadparwaiz1/cmp_luasnip", -- Snippets cmp
+    })
+
     -- Native LSP
     use({
         --"simrat39/rust-tools.nvim", -- Rust Custom LSP
@@ -123,10 +133,12 @@ packer.startup(function(use)
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig", --LSP config
-        --"hrsh7th/nvim-cmp", -- Completion engine
-        --"hrsh7th/cmp-nvim-lsp", -- LSP completion
-        --"saadparwaiz1/cmp_luasnip", -- Snippets cmp
+        "jose-elias-alvarez/typescript.nvim",
         config = require("plugin/lsp_setup"),
+    })
+    use({
+        "onsails/lspkind.nvim",
+        config = require("plugin/lspkind_setup"),
     })
 
     -- Multi-Cursor

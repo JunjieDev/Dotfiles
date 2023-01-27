@@ -33,6 +33,7 @@
 .zsh_sessions/
 .zshenv
 .Trash
+.vim-bookmarks
 
 # Directory/File
 Library

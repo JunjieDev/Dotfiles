@@ -62,10 +62,15 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Luasnip](https://github.com/L3MON4D3/LuaSnip)
     - [x] [Mason.nvim](https://github.com/williamboman/mason.nvim)
     - [x] [Mason_lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-    - [-] [Nvim_cmp](https://github.com/hrsh7th/nvim-cmp)
-    - [-] [Cmp_nvim_lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-    - [-] [Cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
     - [x] [Nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+    - [ ] [Typescript](https://github.com/jose-elias-alvarez/typescript.nvim)
+- LSP :
+    - [ ] [Nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+    - [ ] [Cmp-nvim_lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+    - [ ] [Cmp-path](https://github.com/hrsh7th/cmp-path)
+    - [ ] [Cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+    - [ ] [Cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+    - [ ] [Lspkind](https://github.com/onsails/lspkind.nvim)
 - [x] [Alternate-toggler]()https://github.com/rmagatti/alternate-toggler
 - [x] [Auto Pair](https://github.com/windwp/nvim-autopairs)
 - [x] [Vim-visual-multi](https://github.com/mg979/vim-visual-multi)

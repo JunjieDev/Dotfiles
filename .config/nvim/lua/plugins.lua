@@ -160,10 +160,16 @@ packer.startup(function(use)
     --use({ "ur4ltz/surround", })
     --use({ "kylechui/nvim-surround", })
 
-
     -- Bookmarks
     use({
         "MattesGroeger/vim-bookmarks",
         config = require("plugin/bookmarks_setup"),
     })
+
+    -- Null-ls
+    use({
+        "jose-elias-alvarez/null-ls.nvim",
+        config = require("plugin/null_ls_setup"),
+    })
+
 end)

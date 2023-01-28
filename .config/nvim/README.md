@@ -70,7 +70,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Cmp-path](https://github.com/hrsh7th/cmp-path)
     - [ ] [Cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
     - [ ] [Cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-    - [ ] [Lspkind](https://github.com/onsails/lspkind.nvim)
+    - [x] [Lspkind](https://github.com/onsails/lspkind.nvim)
 - [x] [Alternate-toggler]()https://github.com/rmagatti/alternate-toggler
 - [x] [Auto Pair](https://github.com/windwp/nvim-autopairs)
 - [x] [Vim-visual-multi](https://github.com/mg979/vim-visual-multi)
@@ -86,6 +86,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Nvim-neoclip](https://github.com/AckslD/nvim-neoclip.lua)
     - [ ] [Telescope-vim-bookmarks](https://github.com/tom-anders/telescope-vim-bookmarks.nvim)
 - [ ] [Vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
+- [ ] [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>

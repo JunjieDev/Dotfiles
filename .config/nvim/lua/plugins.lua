@@ -167,9 +167,14 @@ packer.startup(function(use)
     })
 
     -- Null-ls
-    use({
-        "jose-elias-alvarez/null-ls.nvim",
-        config = require("plugin/null_ls_setup"),
-    })
+    --use({
+    --    "jose-elias-alvarez/null-ls.nvim",
+    --    config = require("plugin/null_ls_setup"),
+    --})
 
+    -- Treesitter
+    use({
+        "nvim-treesitter/nvim-treesitter",
+        config = require("plugin/treesitter_setup"),
+    })
 end)

@@ -86,7 +86,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Nvim-neoclip](https://github.com/AckslD/nvim-neoclip.lua)
     - [ ] [Telescope-vim-bookmarks](https://github.com/tom-anders/telescope-vim-bookmarks.nvim)
 - [ ] [Vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
-- [ ] [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
+- [-] [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>

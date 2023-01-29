@@ -223,4 +223,16 @@ packer.startup(function(use)
             "rcarriga/nvim-notify",
         }
     })
+
+    -- Sideways
+    use({
+        "AndrewRadev/sideways.vim",
+        config = require("plugin/sideways_setup"),
+    })
+
+    -- ToggleTerm
+    use({
+        "akinsho/toggleterm.nvim",
+        config = require("plugin/toggleterm_setup"),
+    })
 end)

@@ -99,6 +99,8 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Noice :](https://github.com/folke/noice.nvim)
     - [ ] [Nui](https://github.com/MunifTanjim/nui.nvim)
     - [ ] [Nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [ ] [Sideways](https://github.com/AndrewRadev/sideways.vim)
+- [ ] [ToggleTerm](https://github.com/akinsho/toggleterm.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>
@@ -118,6 +120,8 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Trouble](https://github.com/folke/trouble.nvim)
 - [ ] [vim-auto-save](https://github.com/907th/vim-auto-save)
 - [ ] [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+- [ ] [Vim-obsession](https://github.com/tpope/vim-obsession)
+- [ ] [Nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
 
 </details>
 

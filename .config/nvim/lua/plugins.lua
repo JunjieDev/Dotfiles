@@ -177,4 +177,22 @@ packer.startup(function(use)
         "nvim-treesitter/nvim-treesitter",
         config = require("plugin/treesitter_setup"),
     })
+
+    -- Nvim-ts --
+    -- Autotag
+    use({
+        "windwp/nvim-ts-autotag",
+        --config = require("nvim_ts_autotag_setup"),
+    })
+    -- rainbow
+    use({
+        "p00f/nvim-ts-rainbow",
+        --config = require("nvim_ts_rainbow_setup"),
+    })
+
+    -- Template-string
+    --use({
+    --    "axelvc/template-string.nvim",
+    --    config = require("template_string_setup"),
+    --})
 end)

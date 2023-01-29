@@ -57,6 +57,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [x] [Barbar](https://github.com/romgrk/barbar.nvim)
 - [x] [Indent-backline](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [x] [Guess-indent](https://github.com/NMAC427/guess-indent.nvim)
+- [x] [Vim-nerdtree](https://github.com/preservim/nerdtree)
 - LSP :
     - [-] [Rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim)
     - [ ] [Luasnip](https://github.com/L3MON4D3/LuaSnip)
@@ -87,6 +88,11 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Telescope-vim-bookmarks](https://github.com/tom-anders/telescope-vim-bookmarks.nvim)
 - [ ] [Vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks)
 - [-] [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
+- [x] [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Nvim-ts :
+    - [ ] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+    - [ ] [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+- [-] [Template-string.nvim](https://github.com/axelvc/template-string.nvim)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>
@@ -100,7 +106,6 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 - [ ] [Vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [ ] [Vim-closetag](https://github.com/alvan/vim-closetag)
-- [ ] [Vim-nerdtree](https://github.com/preservim/nerdtree)
 - [ ] [Comment](https://github.com/numToStr/Comment.nvim)
 - [ ] [Auto indent detection](https://github.com/tpope/vim-sleuth)
 - [ ] [Lazygit](https://github.com/kdheepak/lazygit.nvim)
@@ -108,10 +113,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [GitBlame](https://github.com/f-person/git-blame.nvim)
 - [ ] [Trouble](https://github.com/folke/trouble.nvim)
 - [ ] [vim-auto-save](https://github.com/907th/vim-auto-save)
-- [ ] [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [ ] [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
-- [ ] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
-- [ ] [Lspkind](https://github.com/onsails/lspkind.nvim)
 
 </details>
 

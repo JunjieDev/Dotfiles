@@ -90,9 +90,15 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [-] [Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)
 - [x] [Nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Nvim-ts :
-    - [ ] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
-    - [ ] [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
+    - [-] [Nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+    - [-] [Nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow)
 - [-] [Template-string.nvim](https://github.com/axelvc/template-string.nvim)
+- [ ] [Fidget](https://github.com/j-hui/fidget.nvim)
+- [ ] [Todo-comments](https://github.com/folke/todo-comments.nvim)
+- [ ] [Comment](https://github.com/numToStr/Comment.nvim)
+- [ ] [Noice :](https://github.com/folke/noice.nvim)
+    - [ ] [Nui](https://github.com/MunifTanjim/nui.nvim)
+    - [ ] [Nvim-notify](https://github.com/rcarriga/nvim-notify)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>
@@ -102,11 +108,9 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 <details>
 <summary> Others</summary>
 
-- [ ] [Nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [ ] [Vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
 - [ ] [Vim-polyglot](https://github.com/sheerun/vim-polyglot)
 - [ ] [Vim-closetag](https://github.com/alvan/vim-closetag)
-- [ ] [Comment](https://github.com/numToStr/Comment.nvim)
 - [ ] [Auto indent detection](https://github.com/tpope/vim-sleuth)
 - [ ] [Lazygit](https://github.com/kdheepak/lazygit.nvim)
 - [ ] [GitSigns](https://github.com/lewis6991/gitsigns.nvim)

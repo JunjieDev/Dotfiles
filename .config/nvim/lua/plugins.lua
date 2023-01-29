@@ -39,7 +39,7 @@ packer.startup(function(use)
 
     -- Colors Scheme --
     -- Color Scheme
-    packer.use({
+    use({
         "Mofiqul/dracula.nvim",
         as = "dracula",
         config = require("colors/dracula"),
@@ -67,7 +67,7 @@ packer.startup(function(use)
 
     -- Modicator
     use({ "melkster/modicator.nvim",
-        after = "dracula.nvim", -- Add your colorscheme plugin here
+        --after = "dracula.nvim", -- Add your colorscheme plugin here
         setup = function()
             -- These are required for Modicator to work
             vim.o.cursorline = true
@@ -172,27 +172,55 @@ packer.startup(function(use)
     --    config = require("plugin/null_ls_setup"),
     --})
 
+
     -- Treesitter
     use({
         "nvim-treesitter/nvim-treesitter",
         config = require("plugin/treesitter_setup"),
-    })
-
-    -- Nvim-ts --
-    -- Autotag
-    use({
-        "windwp/nvim-ts-autotag",
-        --config = require("nvim_ts_autotag_setup"),
-    })
-    -- rainbow
-    use({
-        "p00f/nvim-ts-rainbow",
-        --config = require("nvim_ts_rainbow_setup"),
+        -- Nvim-ts --
+        --requires = {
+        -- Autotag
+        --    "windwp/nvim-ts-autotag",
+        -- rainbow
+        --    "p00f/nvim-ts-rainbow",
+        --},
     })
 
     -- Template-string
     --use({
     --    "axelvc/template-string.nvim",
-    --    config = require("template_string_setup"),
+    --    config = require("plugin/template_string_setup"),
     --})
+
+    -- Fidget
+    --use({
+    --    "j-hui/fidget.nvim",
+    --    config = require("plugin/fidget_setup"),
+    --})
+
+    -- Todo-comments
+    use({
+        "folke/todo-comments.nvim",
+        config = require("plugin/todo_comments_setup"),
+    })
+
+    -- Comment
+    use({
+        "terrortylor/nvim-comment",
+        config = require("plugin/comment_setup"),
+    })
+
+    -- Noice
+    use({
+        "folke/noice.nvim",
+        config = require("plugin/noice_setup"),
+        requires = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    })
 end)

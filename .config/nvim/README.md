@@ -101,6 +101,7 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
     - [ ] [Nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [ ] [Sideways](https://github.com/AndrewRadev/sideways.vim)
 - [ ] [ToggleTerm](https://github.com/akinsho/toggleterm.nvim)
+- [ ] [Colorizer](https://github.com/norcalli/nvim-colorizer.lua)
 
 <font size="1"> [x] : Crossed (My Config)</font><br/>
 <font size="1"> [-] : Commend & not installed</font><br/>

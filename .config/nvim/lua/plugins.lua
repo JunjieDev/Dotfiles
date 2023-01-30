@@ -235,4 +235,10 @@ packer.startup(function(use)
         "akinsho/toggleterm.nvim",
         config = require("plugin/toggleterm_setup"),
     })
+
+    -- Colorizer
+    use({
+        "norcalli/nvim-colorizer.lua",
+        config = require("plugin/colorizer_setup"),
+    })
 end)

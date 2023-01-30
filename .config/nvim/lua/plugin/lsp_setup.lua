@@ -72,9 +72,27 @@ local lsp_config = {
 
 -- MASON --
 local servers = {
-  "sumneko_lua",
-  "tsserver",
-  "rust_analyzer",
+  "angularls", -- Angular
+  --"bashls", -- Bash
+  --"csharp_ls", -- C#
+  "cssls", -- css
+  "cssmodules_ls", -- css module
+  --"dartls", -- Dart
+  "dockerls", -- Dorcker
+  "html", -- html
+  --"java_language_server", -- Java
+  "jsonls", -- Json
+  --"kotlin_language_server", -- kotlin
+  "ltex", -- Latex
+  "marksman", -- Markdown
+  --"powershell_es", -- Powershell
+  "pylsp", -- Python
+  "rust_analyzer", -- Rust
+  "sumneko_lua", -- Lua
+  "tailwindcss", -- Tailwindcss
+  "tsserver", -- Typescript
+  "vimls", -- Vimls
+  "yamlls", -- Yaml
 }
 mason.setup()
 mason_lsp.setup({

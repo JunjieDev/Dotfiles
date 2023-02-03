@@ -106,7 +106,7 @@ packer.startup(function(use)
     -- Telescope
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { { 'nvim-lua/plenary.nvim' } },
+        requires = { "nvim-lua/plenary.nvim" },
         config = require("plugin/telescope_setup"),
     }
     -- Telescope-Extra-Module
@@ -241,4 +241,21 @@ packer.startup(function(use)
         "norcalli/nvim-colorizer.lua",
         config = require("plugin/colorizer_setup"),
     })
+
+    -- Flutter
+    use {
+        "akinsho/flutter-tools.nvim",
+        requires = { "nvim-lua/plenary.nvim" },
+        --config = function()
+        --    require("config.flutter").setup()
+        --end,
+    }
+
+    --  LazyGit
+    use({
+        "kdheepak/lazygit.nvim",
+        config = require("plugin/lazygit_setup"),
+    })
+
+
 end)

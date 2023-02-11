@@ -124,6 +124,11 @@ Neovim is a text editor. It is directly inspired by Vim. I love the way of proce
 - [ ] [Nvim-treesitter-refactor](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
 - [ ] [Vim-obsession](https://github.com/tpope/vim-obsession)
 - [ ] [Nvim-ufo](https://github.com/kevinhwang91/nvim-ufo)
+- Show Variable/Function :
+    - [ ] [Navigator](https://github.com/ray-x/navigator.lua)
+    - [ ] [Tagbar](https://github.com/preservim/tagbar)
+    - [ ] [Vista](https://github.com/liuchengxu/vista.vim)
+    - [ ] [Symbols-outline](https://github.com/simrat39/symbols-outline.nvim)
 
 </details>
 

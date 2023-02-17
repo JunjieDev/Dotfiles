@@ -13,6 +13,22 @@ brew install tmux
 ```
 apt-get install tmux
 ```
+
+## Documentation
+
+<details>
+<summary> Document </summary>
+
+- [x] Introduction
+- [x] Tmux & Screen
+- Panes:
+    - [x] Split the windows vertically/horizontally
+    - [ ] Delete (kill) current (focused) pane
+    - [ ] Switch to the right/left/top/bottom pane
+
+</details>
+
+
 ## plugin
 
 - [tmux-plugins](https://github.com/tmux-plugins/tpm)
@@ -30,6 +46,3 @@ apt-get install tmux
 
 - [bashbunni](https://github.com/bashbunni/dotfiles)
 - [gpakosz](https://github.com/gpakosz/.tmux)
-
-
-

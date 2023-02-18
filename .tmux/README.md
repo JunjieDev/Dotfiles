@@ -21,10 +21,22 @@ apt-get install tmux
 
 - [x] Introduction
 - [x] Tmux & Screen
-- Panes:
+- Panes :
     - [x] Split the windows vertically/horizontally
-    - [ ] Delete (kill) current (focused) pane
-    - [ ] Switch to the right/left/top/bottom pane
+    - [x] Delete (kill) current (focused) pane
+    - [x] Switch to the right/left/top/bottom pane
+- Windows :
+    - [x] Create and switch to new windows
+    - [x] Switch to specific existing windows
+    - [x] Switch the preview/next
+    - [x] Close the current windows
+    - [x] Rename the current windows
+- Sessions :
+    - [x] Create & attach to a new tmux session
+    - [x] Disconnect the current tmux session
+    - [x] Show list of existing tmux sessions
+    - [x] Back to last/specific disconnect session
+    - [x] Back to last/specific disconnect session
 
 </details>
 

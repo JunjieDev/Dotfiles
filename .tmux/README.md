@@ -35,11 +35,17 @@ apt-get install tmux
     - [x] Create & attach to a new tmux session
     - [x] Disconnect the current tmux session
     - [x] Show list of existing tmux sessions
-    - [x] Back to last/specific disconnect session
-    - [x] Back to last/specific disconnect session
+    - [x] Back to last disconnect session
+    - [x] Back to specific disconnect session
+    - [x] Rename the current session
+- Manage Sessions :
+    - [x] Opening the session management panel
+    - [x] Explication : list of sessions 
+    - [x] Explication : Show all window into session
+    - [x] Tips : shortcut
+- Find Session :
 
 </details>
-
 
 ## plugin
 

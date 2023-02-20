@@ -18,6 +18,7 @@ This repository allows me to have a share point for my dotfiles and configuratio
 ### Tools
 
 - [Neovim v0.8+](https://neovim.io)
+- [Tmux](https://github.com/tmux/tmux/wiki) 
 
 ## Sources
 

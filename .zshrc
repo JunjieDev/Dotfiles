@@ -112,3 +112,8 @@ export PATH="$PATH:/Users/junjie/flutter/bin/cache/dart-sdk/bin"
 # Dotfiles Repository :
 export DOTFILES_REPOSITORY=$HOME/.dotfiles
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
+# Set to start tmux when open the terminal  :
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi

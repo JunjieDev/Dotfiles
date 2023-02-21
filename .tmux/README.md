@@ -27,6 +27,7 @@ apt-get install tmux
     - [x] Switch to the right/left/top/bottom pane
     - [x] Show pane numbers
     - [x] Swap panes
+    - [x] Move the current pane previous/next
     - [x] Send commands to all panes
     - [x] Zoom in/out
     - [x] Resize
@@ -34,6 +35,7 @@ apt-get install tmux
     - [x] join single window -> split
 - Layout :
     - [ ] All layout
+    - [ ] ...
 - Windows :
     - [x] Create and switch to new windows
     - [x] Switch to specific existing windows
@@ -41,10 +43,15 @@ apt-get install tmux
     - [x] Close the current windows
     - [x] Rename the current windows
     - [x] Time
-    - [x] Scrolling
+    - [x] Swap-window
+- Copy mode :
+    - [x] Open
+    - [x] Basic key copy mode (vim)
+    - [ ] ...
 - Sessions :
     - [x] Create & attach to a new tmux session
     - [x] Create & detached to a new tmux session
+    - [x] Create a new session with the name and window
     - [x] Switch the preview/next/last
     - [x] Disconnect the current tmux session
     - [x] Show list of existing tmux sessions
@@ -73,18 +80,20 @@ apt-get install tmux
 
 ## Sources
 
-- [how can i set my default shell to start up tmux](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)
+- [How can i set my default shell to start up tmux](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)
 - [Manage multiple terminal sessions](https://ostechnix.com/tmux-command-examples-to-manage-multiple-terminal-sessions/)
 - [how to zoom panes for better text visibility](https://ostechnix.com/how-to-zoom-tmux-panes-for-better-text-visibility/)
 - [Starter pack (fr)](https://doc.ubuntu-fr.org/tmux)
+- [Tmux cheat sheet](https://gist.github.com/andreyvit/2921703)
 []()
-- [tmuxp : template tmux](https://tmuxp.git-pull.com/)
-- [Everything you need to know about tmux status bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
 - [Tmux key Combinations](https://keycombiner.com/collections/tmux/)
+- [Clean tmux cheat-sheet](https://gist.github.com/Bekbolatov/6840069e51382965fdad)
+- [Tmuxp : template tmux](https://tmuxp.git-pull.com/)
+- [Everything you need to know about tmux status bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
 - [Man openbsd tmux](https://man.openbsd.org/tmux)
 - [Cheat sheet & Quick reference](https://tmuxcheatsheet.com)
 - [Tutoriels (fr)](https://www.hostinger.fr/tutoriels/comment-utiliser-tmux-plus-cheatsheet)
-- [a guide customizing your tmux](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
+- [A guide customizing your tmux](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
 - [Commande reference](https://maxoid.io/tmux/)
 
 ## Exemple Configuration

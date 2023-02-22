@@ -47,6 +47,12 @@ apt-get install tmux
 - Copy mode :
     - [x] Open
     - [x] Basic key copy mode (vim)
+    - [x] Paste content of buffer_0
+    - [x] Capture pane & show buffer
+    - [x] Show buffer
+    - [x] List buffer
+    - [ ] Delete buffer
+    - [ ] Save buffer
     - [ ] ...
 - Sessions :
     - [x] Create & attach to a new tmux session

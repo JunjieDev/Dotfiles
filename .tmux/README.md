@@ -14,6 +14,11 @@ brew install tmux
 apt-get install tmux
 ```
 
+- Get default config :
+```
+tmux show -g | cat > ~/default.conf
+```
+
 ## Documentation
 
 <details>

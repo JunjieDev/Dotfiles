@@ -117,6 +117,9 @@ tmux show -g | cat > ~/default.conf
 - [Commande reference](https://maxoid.io/tmux/)
 - [Everything you need to know about tmux status bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
 - [Tmux-select-layout](https://waylonwalker.com/tmux-select-layout/)
+- [tmux.conf] :
+    - [Bekbolatov](https://gist.github.com/Bekbolatov/6840069e51382965fdad)
+    - [Raygunsix](https://gist.github.com/raygunsix/3044075)
 
 ## Exemple Configuration
 

@@ -14,7 +14,7 @@ brew install tmux
 apt-get install tmux
 ```
 
-- Get default config :
+- Get the current config : 
 ```
 tmux show -g | cat > ~/default.conf
 ```
@@ -23,7 +23,6 @@ tmux show -g | cat > ~/default.conf
 
 <details>
 <summary> Chapter </summary>
-
 - [x] Tmux & Screen
 - First Step :
     - [x] Tmux
@@ -63,7 +62,7 @@ tmux show -g | cat > ~/default.conf
     - [x] Paste content of buffer_0
     - [x] Capture pane & show buffer
     - [x] Show buffer
-    - [x] List buffer
+    - [x] List buffe 
     - [x] Choose buffer
     - [x] Delete buffer
     - [x] Save buffer
@@ -91,13 +90,40 @@ tmux show -g | cat > ~/default.conf
     - [x] Set to start up tmux in my shell
     - [x] File, position and reload the config
     - [x] ~/.tmux.conf
-
 </details>
 
-## plugin
+<details>
+<summary> Explication </summary>
+- Set & setw :
+    - The "set" command sets a global option for all tmux sessions, windows and panels,
+    - In contrast, the "setw" command sets an option for the current window or panel,
+- bind, bind -n, bind -r & bind-key :
+    - bind : This command binds a key combination to a command in the tmux configuration file,
+    - bind -n : The "bind -n" command is used to bind a non-standard keystroke to a command in tmux. Thus, the prefix is not mandatory to access this combination,
+    - bind -r : This command allows you to have a link in "repeatable" mode if you hold down this key, the linked command will be repeated several times. Example: you can use the prefix once and the pane switch command several times (h, j, k, l),
+    - bind-key : This command binds a key combination to a command using tmux's prefix key (by default, "Ctrl + b") and particularly useful for binding complex key combinations,
+- set | setw -q : The "-q" option is used to not display an error message if the option does not exist.
+</details>
+
+## plugins
 
 - [tmux-plugins](https://github.com/tmux-plugins/tpm)
-- [Nerdfonts](https://www.nerdfonts.com/)
+Example install plugins : (~/.tmux.conf)
+```
+set -g @plugin 'github_username/plugin_name'
+set -g @plugin 'github_username/plugin_name#branch'
+set -g @plugin 'git@github.com:user/plugin'
+set -g @plugin 'git@bitbucket.com:user/plugin'
+```
+- [Tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+- [Tmux-battery](https://github.com/tmux-plugins/tmux-battery)
+- [Tmux-yank](https://github.com/tmux-plugins/tmux-yank)
+- [Tmux-open](https://github.com/tmux-plugins/tmux-open)
+- [Tmux-tasks](https://github.com/chriszarate/tmux-tasks)
+    - require [taskwarrior](https://github.com/GothenburgBitFactory/taskwarrior)
+- [Dracula Theme](https://draculatheme.com/tmux)
+- [Vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+
 
 ## Sources
 
@@ -108,6 +134,7 @@ tmux show -g | cat > ~/default.conf
 - [Tmux cheat sheet](https://gist.github.com/andreyvit/2921703)
 - [Cheat sheet & Quick reference](https://tmuxcheatsheet.com)
 []()
+- [Building a custom IDE with tmux](https://mamyn0va.github.io/2019/02/05/building-a-custom-ide-with-tmux)
 - [Tmux key Combinations](https://keycombiner.com/collections/tmux/)
 - [Clean tmux cheat-sheet](https://gist.github.com/Bekbolatov/6840069e51382965fdad)
 - [Tmuxp : template tmux](https://tmuxp.git-pull.com/)
@@ -115,9 +142,12 @@ tmux show -g | cat > ~/default.conf
 - [Tutoriels (fr)](https://www.hostinger.fr/tutoriels/comment-utiliser-tmux-plus-cheatsheet)
 - [A guide customizing your tmux](https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
 - [Commande reference](https://maxoid.io/tmux/)
-- [Everything you need to know about tmux status bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
+- Arcolinux :
+    - [Everthing you need to know about tmux introduction](https://arcolinux.com/everthing-you-need-to-know-about-tmux-introduction/)
+    - [Everything you need to know about tmux status bar](https://arcolinux.com/everything-you-need-to-know-about-tmux-status-bar/)
+    - [Everthing you need to know about tmux windows](https://arcolinux.com/everthing-you-need-to-know-about-tmux-windows/)
 - [Tmux-select-layout](https://waylonwalker.com/tmux-select-layout/)
-- [tmux.conf] :
+- Tmux.conf :
     - [Bekbolatov](https://gist.github.com/Bekbolatov/6840069e51382965fdad)
     - [Raygunsix](https://gist.github.com/raygunsix/3044075)
 

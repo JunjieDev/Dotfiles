@@ -117,3 +117,19 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+# Cli-Pomodoro
+alias pomodoro-timer="timer 5s && terminal-notifier -title 'Timer test ⏲'\
+        -message 'Notification message'\
+        -appIcon '~/.config/Cli-Pomodoro/assets/work.png'\
+        -sound Crystal"
+
+alias pomodoro-work="timer 60m && terminal-notifier -title 'Work Timer is up! Take a Break 😊'\
+        -message 'Pomodoro'\
+        -appIcon '~/.config/Cli-Pomodoro/assets/work.png'\
+        -sound Crystal"
+
+alias pomodoro-rest="timer 10m && terminal-notifier -title 'Break is over! Get back to work 😬'\
+        -message 'Pomodoro'\
+        -appIcon '~/.config/Cli-Pomodoro/assets/work.png'\
+        -sound Crystal"

@@ -90,6 +90,18 @@ tmux show -g | cat > ~/default.conf
     - [x] Set to start up tmux in my shell
     - [x] File, position and reload the config
     - [x] ~/.tmux.conf
+- Binding :
+    - [ ] ...
+- Plugins :
+    - [ ] tmux-plugins
+    - [ ] tmux-battery
+    - [ ] tmux-yank
+    - [ ] tmux-open
+    - [ ] tmux-tasks
+    - [ ] vim-tmux-navigator
+- Customizing :
+    - [ ] DraculaTheme
+    - [ ] ...
 </details>
 
 <details>
@@ -123,7 +135,6 @@ set -g @plugin 'git@bitbucket.com:user/plugin'
     - require [taskwarrior](https://github.com/GothenburgBitFactory/taskwarrior)
 - [Dracula Theme](https://draculatheme.com/tmux)
 - [Vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
-
 
 ## Sources
 

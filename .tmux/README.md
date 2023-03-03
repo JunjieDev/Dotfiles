@@ -91,6 +91,14 @@ tmux show -g | cat > ~/default.conf
     - [x] File, position and reload the config
     - [x] ~/.tmux.conf
 - Binding :
+    - [ ] Reload config
+    - [x] Change prefix
+    - [ ] Split window (1° way)
+    - [ ] Split window (2° way)
+    - [ ] Pane Navigation
+    - [ ] Pane Swap
+    - [ ] Pane Resize
+    - [ ] Switch pane with ALT-arrow
     - [ ] ...
 - Plugins :
     - [ ] tmux-plugins

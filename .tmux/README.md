@@ -30,7 +30,7 @@ tmux show -g | cat > ~/default.conf
 - Help :
     - [x] List key & keyboard shortcut info
 - Panes :
-    - [x] Split the windows vertically/horizontally
+    - [x] Split the panes vertically/horizontally
     - [x] Close the current (focused) pane
     - [x] Switch to the right/left/top/bottom pane
     - [x] Show pane numbers
@@ -89,12 +89,11 @@ tmux show -g | cat > ~/default.conf
 - Configuration :
     - [x] Set to start up tmux in my shell
     - [x] File, position and reload the config
-    - [x] ~/.tmux.conf
+    - [ ] ~/.tmux.conf
 - Binding :
-    - [ ] Reload config
+    - [x] Reload config
     - [x] Change prefix
-    - [ ] Split window (1° way)
-    - [ ] Split window (2° way)
+    - [x] Split panes vertically/horizontally
     - [ ] Pane Navigation
     - [ ] Pane Swap
     - [ ] Pane Resize

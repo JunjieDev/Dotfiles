@@ -6,6 +6,7 @@
 .cargo
 .config/htop/
 .config/iterm2/
+.config/xbuild/
 .dart/
 .dartServer/
 .docker/
@@ -34,6 +35,13 @@
 .zshenv
 .Trash
 .vim-bookmarks
+.IdentityService/
+.aspnet/
+.dotnet/
+.mono/
+.ms_openjdk_config
+.nuget/
+.templateengine/
 
 # Directory/File
 Library

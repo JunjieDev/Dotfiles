@@ -42,6 +42,7 @@
 .ms_openjdk_config
 .nuget/
 .templateengine/
+.nvm/
 
 # Directory/File
 Library

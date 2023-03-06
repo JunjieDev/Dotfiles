@@ -118,6 +118,10 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # Cli-Pomodoro
 alias pomodoro-timer="timer 5s && terminal-notifier -title 'Timer test ⏲'\
         -message 'Notification message'\
@@ -133,3 +137,7 @@ alias pomodoro-rest="timer 10m && terminal-notifier -title 'Break is over! Get b
         -message 'Pomodoro'\
         -appIcon '~/.config/Cli-Pomodoro/assets/work.png'\
         -sound Crystal"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

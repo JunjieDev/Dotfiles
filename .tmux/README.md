@@ -173,3 +173,10 @@ set -g @plugin 'git@bitbucket.com:user/plugin'
 
 - [bashbunni](https://github.com/bashbunni/dotfiles)
 - [gpakosz](https://github.com/gpakosz/.tmux)
+
+
+## Video
+
+- [Make TMUX Look Amazing in 3 Minutes! - complete tutorial](https://www.youtube.com/watch?v=H70lULWJeig)
+- [Inside my iPad Pro SSH Setup - TMUX](https://www.youtube.com/watch?v=B-1wGwvUwm8)
+- [How To Set Up your Terminal for MAXIMUM PRODUCTIVITY](https://www.youtube.com/watch?v=YDLxnHQG-LY&t=4s)

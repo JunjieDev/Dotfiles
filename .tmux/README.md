@@ -88,27 +88,36 @@ tmux show -g | cat > ~/default.conf
     - [x] Note command
 - Configuration :
     - [x] Set to start up tmux in my shell
-    - [x] File, position and reload the config
     - [ ] ~/.tmux.conf
 - Binding :
     - [x] Reload config
     - [x] Change prefix
     - [x] Split panes vertically/horizontally
-    - [ ] Pane Navigation
-    - [ ] Pane Swap
-    - [ ] Pane Resize
-    - [ ] Switch pane with ALT-arrow
+    - [x] Pane Navigation
+    - [x] Pane Swap
+    - [x] Pane Resize
+    - [x] Switch pane with ALT-arrow
     - [ ] ...
 - Plugins :
-    - [ ] tmux-plugins
+    - [x] tmux-plugins/tpm
     - [ ] tmux-battery
     - [ ] tmux-yank
     - [ ] tmux-open
     - [ ] tmux-tasks
     - [ ] vim-tmux-navigator
-- Customizing :
-    - [ ] DraculaTheme
-    - [ ] ...
+- Dracula Theme :
+    - [ ] Install
+    - [ ] Activating theme
+    - [ ] Configuration
+    - [ ] Status bar options
+    - [ ] Cpu-usage options
+    - [ ] Battery options
+    - [ ] GPU-usage options
+    - [ ] Ram-usage options
+    - [ ] Network-ping options
+    - [ ] Time options
+    - [ ] Git options
+    - [ ] Weather options
 </details>
 
 <details>
@@ -135,6 +144,7 @@ set -g @plugin 'git@github.com:user/plugin'
 set -g @plugin 'git@bitbucket.com:user/plugin'
 ```
 - [Tmux-sensible](https://github.com/tmux-plugins/tmux-sensible)
+    - [List plugins](https://github.com/tmux-plugins/list)
 - [Tmux-battery](https://github.com/tmux-plugins/tmux-battery)
 - [Tmux-yank](https://github.com/tmux-plugins/tmux-yank)
 - [Tmux-open](https://github.com/tmux-plugins/tmux-open)

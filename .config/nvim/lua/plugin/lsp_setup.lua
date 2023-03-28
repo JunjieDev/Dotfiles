@@ -83,7 +83,7 @@ local servers = {
   --"java_language_server", -- Java
   "jsonls", -- Json
   --"kotlin_language_server", -- kotlin
-  "ltex", -- Latex
+  --"ltex", -- Latex
   "marksman", -- Markdown
   --"powershell_es", -- Powershell
   "pylsp", -- Python

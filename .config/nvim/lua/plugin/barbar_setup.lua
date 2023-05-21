@@ -4,7 +4,7 @@
 -- URL         : https://github.com/romgrk/barbar.nvim
 
 -- VARIABLE --
-local ok, bufferline = pcall(require, "bufferline")
+local ok, barbar = pcall(require, "barbar")
 local opts = { noremap = true, silent = true }
 local ok_m, mapx = pcall(require, "mapx")
 
@@ -14,7 +14,8 @@ if not ok or not ok_m then
     end
 end
 
-bufferline.setup({
+vim.g.barbar_auto_setup = false
+barbar.setup({
     -- Enable/disable animations
     animation = true,
 
@@ -24,35 +25,74 @@ bufferline.setup({
     -- Enable/disable current/total tabpages indicator (top right corner)
     tabpages = true,
 
-    -- Enable/disable close button
-    closable = true,
-
     -- Enables/disable clickable tabs
     --  - left-click: go to buffer
     --  - middle-click: delete buffer
     clickable = true,
 
     -- Excludes buffers from the tabline
-    --exclude_ft = {'javascript'},
-    --exclude_name = {'package.json'},
+    exclude_ft = {'javascript'},
+    exclude_name = {'package.json'},
 
-    -- Enable/disable icons
-    -- if set to 'numbers', will show buffer index in the tabline
-    -- if set to 'both', will show buffer index and icons in the tabline
-    icons = true,
+    -- A buffer to this direction will be focused (if it exists) when closing the current buffer.
+    -- Valid options are 'left' (the default), 'previous', and 'right'
+    focus_on_close = 'left',
 
-    -- If set, the icon color will follow its corresponding buffer
-    -- highlight group. By default, the Buffer*Icon group is linked to the
-    -- Buffer* group (see Highlighting below). Otherwise, it will take its
-    -- default value as defined by devicons.
-    icon_custom_colors = false,
+    -- Hide inactive buffers and file extensions. Other options are `alternate`, `current`, and `visible`.
+    hide = {extensions = true, inactive = true},
 
-    -- Configure icons on the bufferline.
-    icon_separator_active = '▎',
-    icon_separator_inactive = '▎',
-    icon_close_tab = 'X', -- '',
-    icon_close_tab_modified = '●',
-    icon_pinned = '車',
+    -- Disable highlighting alternate buffers
+    highlight_alternate = false,
+
+    -- Disable highlighting file icons in inactive buffers
+    highlight_inactive_file_icons = false,
+
+    -- Enable highlighting visible buffers
+    highlight_visible = true,
+
+    icons = {
+    -- Configure the base icons on the bufferline.
+    -- Valid options to display the buffer index and -number are `true`, 'superscript' and 'subscript'
+    buffer_index = false,
+    buffer_number = false,
+    button = '',
+    -- Enables / disables diagnostic symbols
+    diagnostics = {
+      [vim.diagnostic.severity.ERROR] = {enabled = true, icon = 'ﬀ'},
+      [vim.diagnostic.severity.WARN] = {enabled = false},
+      [vim.diagnostic.severity.INFO] = {enabled = false},
+      [vim.diagnostic.severity.HINT] = {enabled = true},
+    },
+    gitsigns = {
+      added = {enabled = true, icon = '+'},
+      changed = {enabled = true, icon = '~'},
+      deleted = {enabled = true, icon = '-'},
+    },
+    filetype = {
+      -- Sets the icon's highlight group.
+      -- If false, will use nvim-web-devicons colors
+      custom_colors = false,
+
+      -- Requires `nvim-web-devicons` if `true`
+      enabled = true,
+    },
+    separator = {left = '▎', right = ''},
+
+    -- Configure the icons on the bufferline when modified or pinned.
+    -- Supports all the base icon options.
+    modified = {button = '●'},
+    pinned = {button = '', filename = true},
+
+    -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
+    preset = 'default',
+
+    -- Configure the icons on the bufferline based on the visibility of a buffer.
+    -- Supports all the base icon options, plus `modified` and `pinned`.
+    alternate = {filetype = {enabled = false}},
+    current = {buffer_index = true},
+    inactive = {button = '×'},
+    visible = {modified = {buffer_number = false}},
+    },
 
     -- If true, new buffers will be inserted at the start/end of the list.
     -- Default is to insert after current buffer.
@@ -62,8 +102,14 @@ bufferline.setup({
     -- Sets the maximum padding width with which to surround each tab
     maximum_padding = 1,
 
+    -- Sets the minimum padding width with which to surround each tab
+    minimum_padding = 1,
+
     -- Sets the maximum buffer name length.
     maximum_length = 30,
+
+    -- Sets the minimum buffer name length.
+    minimum_length = 0,
 
     -- If set, the letters for each buffer in buffer-pick mode will be
     -- assigned based on their name. Otherwise or in case all letters are
@@ -71,8 +117,20 @@ bufferline.setup({
     -- usability (see order below)
     semantic_letters = true,
 
+    -- Set the filetypes which barbar will offset itself for
+    sidebar_filetypes = {
+    -- Use the default values: {event = 'BufWinLeave', text = nil}
+    NvimTree = true,
+    -- Or, specify the text used for the offset:
+    undotree = {text = 'undotree'},
+    -- Or, specify the event which the sidebar executes when leaving:
+    ['neo-tree'] = {event = 'BufWipeout'},
+    -- Or, specify both
+    Outline = {event = 'BufWinLeave', text = 'symbols-outline'},
+    },
+
     -- New buffer letters are assigned in this order. This order is
-    -- optimal for the qwerty keyboard layout but might need adjustement
+    -- optimal for the qwerty keyboard layout but might need adjustment
     -- for other layouts.
     letters = 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP',
 

@@ -31,15 +31,15 @@ barbar.setup({
     clickable = true,
 
     -- Excludes buffers from the tabline
-    exclude_ft = {'javascript'},
-    exclude_name = {'package.json'},
+    exclude_ft = {},
+    exclude_name = {},
 
     -- A buffer to this direction will be focused (if it exists) when closing the current buffer.
     -- Valid options are 'left' (the default), 'previous', and 'right'
     focus_on_close = 'left',
 
     -- Hide inactive buffers and file extensions. Other options are `alternate`, `current`, and `visible`.
-    hide = {extensions = true, inactive = true},
+    hide = { extensions = true, inactive = true },
 
     -- Disable highlighting alternate buffers
     highlight_alternate = false,
@@ -51,47 +51,47 @@ barbar.setup({
     highlight_visible = true,
 
     icons = {
-    -- Configure the base icons on the bufferline.
-    -- Valid options to display the buffer index and -number are `true`, 'superscript' and 'subscript'
-    buffer_index = false,
-    buffer_number = false,
-    button = '',
-    -- Enables / disables diagnostic symbols
-    diagnostics = {
-      [vim.diagnostic.severity.ERROR] = {enabled = true, icon = 'ﬀ'},
-      [vim.diagnostic.severity.WARN] = {enabled = false},
-      [vim.diagnostic.severity.INFO] = {enabled = false},
-      [vim.diagnostic.severity.HINT] = {enabled = true},
-    },
-    gitsigns = {
-      added = {enabled = true, icon = '+'},
-      changed = {enabled = true, icon = '~'},
-      deleted = {enabled = true, icon = '-'},
-    },
-    filetype = {
-      -- Sets the icon's highlight group.
-      -- If false, will use nvim-web-devicons colors
-      custom_colors = false,
+        -- Configure the base icons on the bufferline.
+        -- Valid options to display the buffer index and -number are `true`, 'superscript' and 'subscript'
+        buffer_index = false,
+        buffer_number = false,
+        button = '',
+        -- Enables / disables diagnostic symbols
+        diagnostics = {
+            [vim.diagnostic.severity.ERROR] = { enabled = true, icon = 'ﬀ' },
+            [vim.diagnostic.severity.WARN] = { enabled = false },
+            [vim.diagnostic.severity.INFO] = { enabled = false },
+            [vim.diagnostic.severity.HINT] = { enabled = true },
+        },
+        gitsigns = {
+            added = { enabled = true, icon = '+' },
+            changed = { enabled = true, icon = '~' },
+            deleted = { enabled = true, icon = '-' },
+        },
+        filetype = {
+            -- Sets the icon's highlight group.
+            -- If false, will use nvim-web-devicons colors
+            custom_colors = false,
 
-      -- Requires `nvim-web-devicons` if `true`
-      enabled = true,
-    },
-    separator = {left = '▎', right = ''},
+            -- Requires `nvim-web-devicons` if `true`
+            enabled = true,
+        },
+        separator = { left = '▎', right = '' },
 
-    -- Configure the icons on the bufferline when modified or pinned.
-    -- Supports all the base icon options.
-    modified = {button = '●'},
-    pinned = {button = '', filename = true},
+        -- Configure the icons on the bufferline when modified or pinned.
+        -- Supports all the base icon options.
+        modified = { button = '●' },
+        pinned = { button = '', filename = true },
 
-    -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
-    preset = 'default',
+        -- Use a preconfigured buffer appearance— can be 'default', 'powerline', or 'slanted'
+        preset = 'default',
 
-    -- Configure the icons on the bufferline based on the visibility of a buffer.
-    -- Supports all the base icon options, plus `modified` and `pinned`.
-    alternate = {filetype = {enabled = false}},
-    current = {buffer_index = true},
-    inactive = {button = '×'},
-    visible = {modified = {buffer_number = false}},
+        -- Configure the icons on the bufferline based on the visibility of a buffer.
+        -- Supports all the base icon options, plus `modified` and `pinned`.
+        alternate = { filetype = { enabled = false } },
+        current = { buffer_index = true },
+        inactive = { button = '×' },
+        visible = { modified = { buffer_number = false } },
     },
 
     -- If true, new buffers will be inserted at the start/end of the list.
@@ -119,14 +119,14 @@ barbar.setup({
 
     -- Set the filetypes which barbar will offset itself for
     sidebar_filetypes = {
-    -- Use the default values: {event = 'BufWinLeave', text = nil}
-    NvimTree = true,
-    -- Or, specify the text used for the offset:
-    undotree = {text = 'undotree'},
-    -- Or, specify the event which the sidebar executes when leaving:
-    ['neo-tree'] = {event = 'BufWipeout'},
-    -- Or, specify both
-    Outline = {event = 'BufWinLeave', text = 'symbols-outline'},
+        -- Use the default values: {event = 'BufWinLeave', text = nil}
+        NvimTree = true,
+        -- Or, specify the text used for the offset:
+        undotree = { text = 'undotree' },
+        -- Or, specify the event which the sidebar executes when leaving:
+        ['neo-tree'] = { event = 'BufWipeout' },
+        -- Or, specify both
+        Outline = { event = 'BufWinLeave', text = 'symbols-outline' },
     },
 
     -- New buffer letters are assigned in this order. This order is

@@ -72,27 +72,27 @@ local lsp_config = {
 
 -- MASON --
 local servers = {
-  "angularls", -- Angular
+  --"angularls", -- Angular
   --"bashls", -- Bash
   --"csharp_ls", -- C#
-  "cssls", -- css
+  "cssls",         -- css
   "cssmodules_ls", -- css module
   --"dartls", -- Dart
-  "dockerls", -- Dorcker
-  "html", -- html
+  "dockerls",      -- Dorcker
+  "html",          -- html
   --"java_language_server", -- Java
-  "jsonls", -- Json
+  "jsonls",        -- Json
   --"kotlin_language_server", -- kotlin
   --"ltex", -- Latex
-  "marksman", -- Markdown
+  "marksman",      -- Markdown
   --"powershell_es", -- Powershell
-  "pylsp", -- Python
+  "pylsp",         -- Python
   "rust_analyzer", -- Rust
-  "sumneko_lua", -- Lua
-  "tailwindcss", -- Tailwindcss
-  "tsserver", -- Typescript
-  "vimls", -- Vimls
-  "yamlls", -- Yaml
+  "lua_ls",        -- Lua
+  "tailwindcss",   -- Tailwindcss
+  "tsserver",      -- Typescript
+  "vimls",         -- Vimls
+  "yamlls",        -- Yaml
 }
 mason.setup()
 mason_lsp.setup({
@@ -185,8 +185,8 @@ cmp.setup({
     },
     format = lspkind.cmp_format({
       with_text = true,
-      mode = 'symbol_text', -- show only symbol annotations
-      maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+      mode = 'symbol_text',  -- show only symbol annotations
+      maxwidth = 50,         -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
       ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
 
       -- The function below will be called before any actual modifications from lspkind

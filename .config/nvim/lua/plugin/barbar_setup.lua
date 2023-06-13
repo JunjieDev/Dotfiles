@@ -39,7 +39,7 @@ barbar.setup({
     focus_on_close = 'left',
 
     -- Hide inactive buffers and file extensions. Other options are `alternate`, `current`, and `visible`.
-    hide = { extensions = true, inactive = true },
+    hide = {},
 
     -- Disable highlighting alternate buffers
     highlight_alternate = false,
